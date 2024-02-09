@@ -1,0 +1,12 @@
+external_templates:
+  file: config/overlays/config/templates.yml
+
+### TMDB TRENDING / IMDB AWARDS ###
+
+overlays:
+  trendingMovies:
+    template: {name: Trending, gte: "", lte: "", target_collection: "Trending", group: "awards", weight: 400, tmdb_trending_daily: ""} 
+  trendingSeries:
+    template: {name: TrendingSeries, tmdbTrendDaily: 100, group: "awards", weight: 400} 
+
+### TMDB TRENDING / IMDB AWARDS ###

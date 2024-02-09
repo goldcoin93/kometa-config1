@@ -1,0 +1,144 @@
+overlays:
+
+### RESOLUTIONS ###
+  4k_dv:
+    overlay:
+      name: 4k_dv
+      file: config/overlays/4k/4k_dv.png
+      group: resolution-4k
+      weight: 120
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+      validate: false
+    filters:
+      has_dolby_vision: true
+  
+  4k_hdr:
+    overlay:
+      name: 4k_hdr
+      file: config/overlays/4k/4k_hdr.png
+      group: resolution-4k
+      weight: 110
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+        hdr: true
+      validate: false
+  
+  4k:
+    overlay:
+      name: 4k
+      file: config/overlays/4k/4k.png
+      group: resolution-4k
+      weight: 100
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+      validate: false
+  
+### RESOLUTIONS ###
+
+
+### NETWORKS ###
+
+#  Trending:
+#    overlay:
+#      name: trending
+#      group: awards
+#      weight: 700
+#    trakt_list:
+#     - "https://trakt.tv/users/hitman860/lists/new-trending-trending-movies"
+     
+#  Awards_1:
+#    overlay:
+#      group: awards
+#      weight: 900
+#      name: oscar
+#    imdb_search:
+#      release.after: 1990-01-01
+#      event.winning: oscar
+    
+#  Awards_2:
+#    overlay:
+#      group: awards
+#      weight: 899
+#      name: globe
+#    imdb_search:
+#      release.after: 1990-01-01
+#      event.winning: golden
+    
+#  Awards_3:
+#    overlay:
+#      group: awards
+#      weight: 898
+#      name: emmy
+#    imdb_search:
+#      release.after: 1990-01-01
+#      event.winning: emmy
+
+#  Awards_4:
+#    overlay:
+#      group: awards
+#      weight: 800
+#      name: imdb250
+#    imdb_search:
+#      imdb_top: 250
+
+### NETWORKS ###
+
+#  Netflix:
+#    overlay:
+#      name: netflix
+#      group: ICONS-movie
+#      weight: 800
+#    mdblist_list: https://mdblist.com/lists/plexmetamanager/netflix-movies
+
+#  Disney:
+#    overlay:
+#      name: disney
+#      group: ICONS-movie
+#      weight: 775
+#    mdblist_list: https://mdblist.com/lists/plexmetamanager/disney-movies
+
+#  HBO:
+#    overlay:
+#      name: hbomax
+#      group: ICONS-movie
+#      weight: 700
+#    mdblist_list: https://mdblist.com/lists/plexmetamanager/hbomax-movies
+
+#  Hulu:
+#    overlay:
+#      name: hulu
+#      group: ICONS-movie
+#      weight: 650
+#    mdblist_list: https://mdblist.com/lists/plexmetamanager/hulu-movies
+
+#  Paramount:
+#    overlay:
+#      name: paramount
+#      group: ICONS-movie
+#      weight: 625
+#    mdblist_list: https://mdblist.com/lists/plexmetamanager/paramount-movies
+
+#  AppleTV:
+#    overlay:
+#      name: apple
+#      group: ICONS-movie
+#      weight: 750
+#    mdblist_list: https://mdblist.com/lists/plexmetamanager/appletv-movies
+
+#  Prime:
+#    overlay:
+#      name: prime
+#      group: ICONS-movie
+#      weight: 675
+#    mdblist_list: https://mdblist.com/lists/plexmetamanager/amazon-movies
+
+#  Plex:
+#    overlay:
+#      name: plex
+#      group: ICONS-movie
+#      weight: 100
+#    plex_all: true
