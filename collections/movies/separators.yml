@@ -1,0 +1,25 @@
+collections:
+  Top 10s Streaming:
+    url_poster: https://i.imgur.com/wtRDYCb.jpg
+    sort_title: '!01_Top10sStreaming'
+    blank_collection: true
+  Recommended:
+    url_poster: https://i.imgur.com/XlLwDWh.jpg
+    sort_title: '!10_Recommended'
+    blank_collection: true
+  Actors:
+    url_poster: https://i.imgur.com/wxvnh9A.jpg
+    sort_title: '!20_Actors'
+    blank_collection: true
+  Directors:
+    url_poster: https://i.imgur.com/992zpFP.jpeg
+    sort_title: '!22_Actors'
+    blank_collection: true
+  Genre: 
+    url_poster: https://i.imgur.com/3tfQx21.jpg
+    sort_title: '!30_Genre'
+    blank_collection: true
+  Franchises:
+    url_poster: https://i.imgur.com/TMoQkg0.jpg
+    sort_title: '!99_Franchises'
+    blank_collection: true

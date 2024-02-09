@@ -1,0 +1,35 @@
+templates:
+  Actor:
+    smart_filter:
+      all:
+        actor: tmdb
+      sort_by: release.desc
+    tmdb_person: <<person>>
+    sort_title: "!21_<<collection_name>>"
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sync_mode: sync
+    summary: <<collection_name>>'s Films
+    collection_mode: hide_items
+
+collections:
+
+  Denzel Washington:
+    template: {name: Actor, person: 5292, poster: 116380}
+  Jack Nicholson:
+    template: {name: Actor, person: 514, poster: 116376}
+  Anthony Hopkins:
+    template: {name: Actor, person: 4173, poster: 116389}
+  Samuel L. Jackson:
+    template: {name: Actor, person: 2231, poster: 48966}
+  Morgan Freeman:
+    template: {name: Actor, person: 192, poster: 48939}
+  Clint Eastwood:
+    template: {name: Actor, person: 190, poster: 47427}
+  Nicolas Cage:
+    template: {name: Actor, person: 2963, poster: 116368}
+  John Wayne:
+    template: {name: Actor, person: 4165, poster: 47451}
+  Leonardo Di Caprio:
+    template: {name: Actor, person: 6193, poster: 116370}
+
+

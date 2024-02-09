@@ -1,0 +1,69 @@
+##############################################################
+##                  Holiday Collections                     ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+    Holiday:
+        sort_title: "!!!!00_<<collection_name>>"
+        url_poster: <<poster>>
+        collection_order: release.desc
+        collection_mode: hide_items
+        delete_not_scheduled: true
+        #run_again: true
+        visible_home: true
+        visible_shared: true
+        sync_mode: sync
+
+#############################
+##       Collections       ##
+#############################
+
+# FYI: To set the collections on a schedule to where they don't show all year long uncomment "schedule" and and change "delete_not_scheduled:" to "true"
+
+collections:
+  Christmas: #IMDB lists have been removed as they have all been merged into christmas-static-list
+    template: {name: Holiday, holiday: "Christmas", poster: https://theposterdb.com/api/assets/75801}
+    visible_home: range(12/01-12/31)
+    visible_shared: range(12/01-12/31)
+    schedule: range(12/01-12/31)
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/christmas
+      - https://trakt.tv/users/jjjonesjr33/lists/christmas-static-list
+      - https://trakt.tv/users/triadcool/lists/christmas
+    summary: This collection revolves around the plot involving Christmas.
+
+  Halloween:
+    template: {name: Holiday, holiday: "Halloween", poster: https://theposterdb.com/api/assets/215359}
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    schedule: range(10/01-10/31)
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/halloween-classic-sagas
+    summary: This collection revolves around the plot involving Halloween.
+
+#  Valentine's Day Movies:
+#    template: {name: Holiday, holiday: "Valentine's Day", poster: https://theposterdb.com/api/assets/212641}
+#    visible_home: range(02/01-02/14)
+#    visible_shared: range(02/01-02/14)
+#    schedule: range(02/01-02/14)
+#    sort_title: "!01_<<collection_name>>"
+#    imdb_list:
+#      - https://www.imdb.com/list/ls000094398/
+#      - https://www.imdb.com/list/ls057783436/
+#      - https://www.imdb.com/list/ls064427905/
+#    summary: This collection revolves around the plot involving Valentine's Day.

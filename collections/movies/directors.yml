@@ -1,0 +1,21 @@
+templates:
+  Director:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: release.desc
+    tmdb_person: <<person>>
+    sort_title: "!23_<<collection_name>>"
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sync_mode: sync
+    summary: <<collection_name>>'s Films
+    collection_mode: hide_items
+
+collections:
+
+  Christopher Nolan:
+    template: {name: Director, person: 525, poster: 47425}
+  Quentin Tarantino:
+    template: {name: Director, person: 138, poster: 47468}
+
+

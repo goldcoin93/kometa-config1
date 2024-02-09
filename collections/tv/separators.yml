@@ -1,0 +1,5 @@
+collections:
+  Top 10s Streaming:
+    url_poster: https://i.imgur.com/wtRDYCb.jpg
+    sort_title: '!00_Top10sStreaming'
+    blank_collection: true

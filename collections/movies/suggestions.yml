@@ -1,0 +1,94 @@
+##############################################################
+##               Suggestions Collections                    ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  Suggestion:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: "!11_<<collection_name>>"
+    collection_mode: hide_items
+    collection_order: release.desc
+    # visible_home: range(01/01-12/31)
+    # visible_shared: range(01/01-12/31)
+    sync_mode: sync
+          
+#############################
+##       Collections       ##
+#############################
+
+collections:
+  Trending:
+    template: {name: Suggestion, poster: 396719}
+    trakt_list:
+      - https://trakt.tv/users/sigmund93/lists/most-watched-top-20
+    summary: "The 20 Most Watched movies over the past week."
+
+  Popular:
+    template: {name: Suggestion, poster: 396722}
+    trakt_list:
+      - https://trakt.tv/users/sigmund93/lists/most-recommended-top-20
+    summary: "The 20 Most Recommended movies over the past month."
+  
+  Oscar's Winners:
+    template: {name: Suggestion, poster: 98024}
+    imdb_search:
+      release.after: 1990-01-01
+      event.winning: oscar
+    summary: "All the movies that have won an Oscar since 1990"
+  
+  IMDB Top 250:
+    template: {name: Suggestion, poster: 396723}
+    trakt_list:
+      - https://trakt.tv/users/sigmund93/lists/imdb-top-250
+    summary: "The IMDB Top 250"
+    
+  
+
+#################
+##    Trakt    ##
+#################
+
+#  Trending:
+#    template: {name: Suggestion, poster: 244021}  
+#    trakt_list:
+#      - https://trakt.tv/users/jjjonesjr33/lists/trakt-trending
+#    summary: "Movies Trending across the internet"
+    
+#  Popular:
+#    template: {name: Suggestion, poster: 244024}
+#    trakt_list:
+#      - https://trakt.tv/users/jjjonesjr33/lists/trakt-top-weekly
+#    summary: "A collection of the most watched movies over the past week."
+    
+#  Recommended:
+#    template: {name: Suggestion, poster: 213604}
+#    trakt_list:
+#      - https://trakt.tv/users/jjjonesjr33/lists/top-20-movies-of-the-week
+#    visible_home: range(01/01-12/31)
+#    visible_shared: range(01/01-12/31)
+#    summary: "Recommended Top Movies of the Week"
+    
+#  Newly Released:
+#    template: {name: Suggestion, poster: 213599}
+#    url_poster: https://theposterdb.com/api/assets/213599
+#    trakt_list:
+#      - https://trakt.tv/users/jjjonesjr33/lists/newly-released
+#    visible_home: range(01/01-12/31)
+#    visible_shared: range(01/01-12/31)
+#    summary: "A collection of newly-released movies in cinema and on streaming services."
+

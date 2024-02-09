@@ -1,0 +1,43 @@
+##############################################################
+##               Suggestions Collections                    ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  suggestion:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: "!01_<<collection_name>>"
+    collection_mode: hide
+    sync_mode: sync
+      
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+################
+##    Plex    ##
+################
+
+Recently Released:
+    template: { name: suggestion, poster: 213602}
+    smart_filter:
+      all:
+        release: 7
+      sort_by: episode_added.desc
+    summary: Episodes that have aired or been released within the last week.

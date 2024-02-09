@@ -1,0 +1,34 @@
+templates:
+  Collection:
+    collection_order: release.desc
+    sync_mode: sync
+    sort_title: "!03_<<collection_name>>"
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    collection_mode: hide_items
+
+
+collections:
+  The Planet Collection:
+    template: {name: Collection, poster: 208678}
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/best-bbc-wildlife-and-nature-documentaries
+      - https://trakt.tv/users/agent531c/lists/the-planet-collection
+
+  Star Wars Collection:
+    template: {name: Collection, poster: 57917}
+    trakt_list: https://trakt.tv/users/albatr0ss/lists/star-wars-tv-shows
+  
+  The Walking Dead Collection:
+    template: {name: Collection, poster: 176383}
+    trakt_list: https://trakt.tv/users/sigmund93/lists/the-walking-dead-universe
+
+  Nickelodeon:
+    template: {name: Collection, poster: 113230}
+    trakt_list: https://trakt.tv/users/techtitus/lists/nickelodeon
+  
+  Yellowstone Universe:
+    template: {name: Collection, poster: 300602}
+    trakt_list: https://trakt.tv/users/sigmund93/lists/yellowstone-franchise
+    
+
+    
