@@ -14,7 +14,7 @@ dimensional_asset_rename: false
 download_url_assets: true
 ```
 Make sure to review all the `settings` in the config.yaml file.
-If you'd like to understand more about these attributes, visit the [wiki] (https://metamanager.wiki/en/nightly/config/settings/). 
+If you'd like to understand more about these attributes, visit the [wiki](https://metamanager.wiki/en/nightly/config/settings/). 
 
 ## Movies
 
