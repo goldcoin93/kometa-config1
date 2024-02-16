@@ -32,6 +32,11 @@ templates:
 #############################
 
 collections:
+  Recently Added:
+    template: {name: Suggestion, poster: }
+    plex_search:
+      any: 
+        added: 15
   Trending:
     template: {name: Suggestion, poster: 396719}
     trakt_list:
