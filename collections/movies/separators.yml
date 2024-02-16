@@ -1,11 +1,11 @@
 collections:
-  Top 10s Streaming:
-    url_poster: https://i.imgur.com/wtRDYCb.jpg
-    sort_title: '!01_Top10sStreaming'
-    blank_collection: true
+#  Top 10s Streaming: 
+#    url_poster: https://i.imgur.com/wtRDYCb.jpg
+#    sort_title: '!01_Top10sStreaming'
+#    blank_collection: true
   Recommended:
     url_poster: https://i.imgur.com/XlLwDWh.jpg
-    sort_title: '!10_Recommended'
+    sort_title: '!11_Recommended'
     blank_collection: true
   Actors:
     url_poster: https://i.imgur.com/wxvnh9A.jpg

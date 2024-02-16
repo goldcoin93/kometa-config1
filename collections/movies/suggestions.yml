@@ -18,50 +18,90 @@
 #######################
 
 templates:
-  Suggestion:
+  Recent:         #The plan is to call this template "Added-Leaving" for "Recently Added" and "Leaving Soon"
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: "!11_<<collection_name>>"
+    sort_title: "!10_<<collection_name>>"
     collection_mode: hide_items
     collection_order: release.desc
-    # visible_home: range(01/01-12/31)
-    # visible_shared: range(01/01-12/31)
     sync_mode: sync
+  Tops:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: "!12_<<collection_name>>"
+    collection_mode: hide_items
+    collection_order: release.desc
+    sync_mode: sync
+  Awards:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: "!13_<<collection_name>>"
+    collection_mode: hide_items
+    collection_order: custom
+    sync_mode: sync
+
           
 #############################
 ##       Collections       ##
 #############################
 
 collections:
+
+#####################################
+## Recently Added and Leaving Soon ##
+#####################################
   Recently Added:
-    template: {name: Suggestion, poster: }
+    template: {name: Recent, poster: }
     plex_search:
       any: 
         added: 15
+    summary: "Movies that were added to Plex in the last 15 days"
+
+########################################
+## Recommended (TOPs, Trendings, etc) ##
+########################################
   Trending:
     template: {name: Suggestion, poster: 396719}
     trakt_list:
       - https://trakt.tv/users/sigmund93/lists/most-watched-top-20
     summary: "The 20 Most Watched movies over the past week."
-
   Popular:
     template: {name: Suggestion, poster: 396722}
     trakt_list:
       - https://trakt.tv/users/sigmund93/lists/most-recommended-top-20
     summary: "The 20 Most Recommended movies over the past month."
-  
-  Oscar's Winners:
-    template: {name: Suggestion, poster: 98024}
+
+############
+## Awards ##
+############
+  IMDB Top 250:
+    template: {name: Suggestion, poster: 396723}
+    imdb_search:
+      type: movie
+      imdb_top: 250
+    summary: "The IMDB Top 250"
+  IMDB Top 1000:
+    template: {name: Suggestion, poster: }
+    imdb_search:
+      type: movie
+      imdb_top: 1000
+    summary: "The IMDB Top 1000"
+  Oscar Winners:
+    template: {name: Awards, poster: 98024}
     imdb_search:
       release.after: 1990-01-01
       event.winning: oscar
     summary: "All the movies that have won an Oscar since 1990"
+  Emmy Winners:
+    template: {name: Awards, poster: 98024}
+    imdb_search:
+      release.after: 1990-01-01
+      event.winning: emmy
+    summary: "All the movies that have won an Emmy since 1990"
+  Golden Globe Winners:
+    template: {name: Awards, poster: 98024}
+    imdb_search:
+      release.after: 1990-01-01
+      event.winning: emmy
+    summary: "All the movies that have won an Emmy since 1990"
   
-  IMDB Top 250:
-    template: {name: Suggestion, poster: 396723}
-    trakt_list:
-      - https://trakt.tv/users/sigmund93/lists/imdb-top-250
-    summary: "The IMDB Top 250"
-    
   
 
 #################
