@@ -62,12 +62,12 @@ collections:
       type: movie
       imdb_top: 250
     summary: "The IMDB Top 250"
-  IMDB Top 1000:
-    template: {name: Awards, poster: }
-    imdb_search:
-      type: movie
-      imdb_top: 1000
-    summary: "The IMDB Top 1000"
+#  IMDB Top 1000:
+#    template: {name: Awards, poster: }
+#    imdb_search:
+#      type: movie
+#      imdb_top: 1000
+#    summary: "The IMDB Top 1000"
   Oscar Winners:
     template: {name: Awards, poster: 98024}
     imdb_search:
@@ -75,20 +75,20 @@ collections:
       release.after: 1970-01-01
       event.winning: oscar
     summary: "All the movies that have won an Oscar since 1970"
-  Emmy Winners:
-    template: {name: Awards, poster: }
-    imdb_search:
-      limit: 1000
-      release.after: 1970-01-01
-      event.winning: emmy
-    summary: "All the movies that have won an Emmy since 1970"
-  Golden Globe Winners:
-    template: {name: Awards, poster: }
-    imdb_search:
-      limit: 1000
-      release.after: 1970-01-01
-      event.winning: golden
-    summary: "All the movies that have won an Emmy since 1970"
+#  Emmy Winners:
+#    template: {name: Awards, poster: }
+#    imdb_search:
+#      limit: 1000
+#      release.after: 1970-01-01
+#      event.winning: emmy
+#    summary: "All the movies that have won an Emmy since 1970"
+#  Golden Globe Winners:
+#    template: {name: Awards, poster: }
+#    imdb_search:
+#      limit: 1000
+#      release.after: 1970-01-01
+#      event.winning: golden
+#    summary: "All the movies that have won an Emmy since 1970"
   
   
 
