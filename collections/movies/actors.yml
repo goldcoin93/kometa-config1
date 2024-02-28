@@ -31,5 +31,11 @@ collections:
     template: {name: Actor, person: 4165, poster: 47451}
   Leonardo Di Caprio:
     template: {name: Actor, person: 6193, poster: 116370}
+  Pedro Pascal:
+    template: {name: Actor, person: 1253360, poster: }
+  Jason Statham:
+    template: {name: Actor, person: 976, poster: 310748}
+  Ana de Armas:
+    template: {name: Actor, person: 224513, poster: 105172}
 
 

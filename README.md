@@ -2,7 +2,10 @@
 Special thanks to many people in PMM discord! Also, I'd like to particularly thank bullmose and Mr. Carrot who have helped me tremendously with all my support needs. 
 The current configuration was inspired (and copied from) by other people's work: bullmose, solen, kaden, and JJJonesJr3)
 
-## Important Notes - Settings
+## Important Notes
+
+This is a work in progress!! Readme is still incomplete! Updates will happen regurlarly!
+
 Configuration files are based on NIGHTLY version.
 
 Do keep in mind that this config will download all the pics from URL and place them into the `assets` folder. Part of the settings configuration below:

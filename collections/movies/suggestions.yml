@@ -33,11 +33,11 @@ collections:
 ## Recently Added and Leaving Soon ##
 #####################################
   Recently Added:
-    template: {name: Recent, poster: }
+    template: {name: Recent, poster: 317028}
     plex_search:
       any: 
-        added: 15
-    summary: "Movies that were added to Plex in the last 15 days"
+        added: 30
+    summary: "Movies that were added to Plex in the last 30 days"
 
 ########################################
 ## Recommended (TOPs, Trendings, etc) ##
