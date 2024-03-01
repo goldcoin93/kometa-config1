@@ -4,9 +4,9 @@ The current configuration was inspired (and copied from) by other people's work:
 
 ## Important Notes
 
-This is a work in progress!! Readme is still incomplete! Updates will happen regurlarly!
-
 Configuration files are based on NIGHTLY version.
+
+This is a work in progress!! Readme is still incomplete! Updates will happen regurlarly!
 
 Do keep in mind that this config will download all the pics from URL and place them into the `assets` folder. Part of the settings configuration below:
 ```

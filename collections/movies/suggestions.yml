@@ -62,12 +62,12 @@ collections:
       type: movie
       imdb_top: 250
     summary: "The IMDB Top 250"
-#  IMDB Top 1000:
-#    template: {name: Awards, poster: }
-#    imdb_search:
-#      type: movie
-#      imdb_top: 1000
-#    summary: "The IMDB Top 1000"
+  IMDB Top 1000:
+    template: {name: Awards, poster: 264259}
+    imdb_search:
+      type: movie
+      imdb_top: 1000
+    summary: "The IMDB Top 1000"
   Oscar Winners:
     template: {name: Awards, poster: 98024}
     imdb_search:
