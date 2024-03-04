@@ -11,18 +11,19 @@ templates:
         url_poster: https://theposterdb.com/api/assets/<<poster>>
         sort_title: "!31_<<collection_name>>"
         collection_mode: hide_items
-    Genre:
-        plex_search:
-          genre: <<genre>>
-        url_poster: https://theposterdb.com/api/assets/<<poster>>
-        sort_title: "!31_<<collection_name>>"
-        collection_mode: hide_items
-        collection_order: release.desc
     Special Genre:
         url_poster: https://theposterdb.com/api/assets/<<poster>>
         sort_title: "!31_<<collection_name>>"
         collection_mode: hide_items
         collection_order: release.desc
+
+#    Genre:
+#        plex_search:
+#          genre: <<genre>>
+#        url_poster: https://theposterdb.com/api/assets/<<poster>>
+#        sort_title: "!31_<<collection_name>>"
+#        collection_mode: hide_items
+#        collection_order: release.desc
             
 #############################
 ##       Collections       ##
@@ -49,9 +50,6 @@ collections:
 #  Anime:
 #    template: {name: Dynamic, collection: Anime, poster: 213614}
 #    summary: As a type of animation, anime is an art form that comprises of many genres found in other mediums.
-#  Children:
-#    template: {name: Dynamic, collection: Children, poster: 159047}
-#    summary: A children's film, or family film, is a film genre that contains children or relates to them in the context of home and family. Children's films are made specifically for children and not necessarily for the general audience, while family films are made for a wider appeal with a general audience in mind.
   Comedy:
     template: {name: Dynamic, collection: Comedy, poster: 51397}
     summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
@@ -123,11 +121,15 @@ collections:
     mdblist_list:
       - https://mdblist.com/lists/sigmund93/biographies
   B-Movies Horror:
-    template: {name: Special Genre}
+    template: {name: Special Genre, poster: 458254}
     summary: A B movie, or B film, is a type of low-budget commercial motion picture. Originally, during the Golden Age of Hollywood, this term specifically referred to films meant to be shown as the lesser-known second half of a double feature, somewhat similar to B-sides in the world of recorded music.
     trakt_list:
       - https://trakt.tv/users/sigmund93/lists/b-movies
-    url_poster: https://i.imgur.com/HpHssEO.jpeg
+  Children:
+    template: {name: Special Genre, collection: Children, poster: 409164}
+    summary: A children's film, or family film, is a film genre that contains children or relates to them in the context of home and family. Children's films are made specifically for children and not necessarily for the general audience, while family films are made for a wider appeal with a general audience in mind.
+    trakt_list:
+      - https://trakt.tv/users/sigmund93/lists/children-movies
   Disaster: 
     template: {name: Special Genre, poster: 313375}
     summary: A disaster film or disaster movie is a film genre that has an impending or ongoing disaster as its subject and primary plot device. 

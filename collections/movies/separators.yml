@@ -3,9 +3,13 @@ collections:
 #    url_poster: https://i.imgur.com/wtRDYCb.jpg
 #    sort_title: '!01_Top10sStreaming'
 #    blank_collection: true
-  Recommended:
-    url_poster: https://i.imgur.com/XlLwDWh.jpg
-    sort_title: '!11_Recommended'
+  Awards:
+    url_poster: https://i.imgur.com/HUi9NtK.jpeg
+    sort_title: '!04_Awards'
+    blank_collection: true
+  Popularity:
+    url_poster: https://i.imgur.com/LwFREiz.jpeg
+    sort_title: '!11_Popularity'
     blank_collection: true
   Actors:
     url_poster: https://i.imgur.com/wxvnh9A.jpg
@@ -19,6 +23,10 @@ collections:
     url_poster: https://i.imgur.com/3tfQx21.jpg
     sort_title: '!30_Genre'
     blank_collection: true
+#  Geographic:
+#    url_poster: https://i.imgur.com/SCYQ8X7.jpeg
+#    sort_title: '!40_Geographic'
+#    blank_collection: true
   Franchises:
     url_poster: https://i.imgur.com/TMoQkg0.jpg
     sort_title: '!99_Franchises'

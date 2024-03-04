@@ -1,0 +1,29 @@
+#######################
+##     Templates     ##
+#######################
+
+templates:
+    Country:         # mapping name does not matter, just needs to be unique
+      plex_all: true
+      filter:
+        original_language: <<collection>>
+       # sort_by: release.desc
+      url_poster: https://theposterdb.com/api/assets/<<poster>>
+      #style: color
+      sort_title: "!41_<<collection_name>>"
+      collection_mode: hide_items
+            
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+###################################
+##       Smart Collections       ##
+###################################
+
+#  United States:
+#    template: {name: Country, collection: United States of America}
+  Spain:
+    template: {name: Country, collection: Spain, poster: 217291}

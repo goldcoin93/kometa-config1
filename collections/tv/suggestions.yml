@@ -20,7 +20,7 @@
 templates:
   suggestion:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: "!01_<<collection_name>>"
+    sort_title: "!!!!00_<<collection_name>>"
     collection_mode: hide
     sync_mode: sync
       
@@ -35,9 +35,17 @@ collections:
 ################
 
 Recently Released:
-    template: { name: suggestion, poster: 213602}
+    template: {name: suggestion, poster: 260707}
     smart_filter:
       all:
         release: 7
       sort_by: episode_added.desc
     summary: Episodes that have aired or been released within the last week.
+
+Recently Added:
+    template: {name: suggestion, poster: 260710}
+    smart_filter:
+      all:
+        added: 15
+      sort_by: added.desc
+    summary: TV Shows that have been added in the last 15 days to Plex.

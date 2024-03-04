@@ -5,19 +5,19 @@
 templates:
   Recent:         #The plan is to call this template "Added-Leaving" for "Recently Added" and "Leaving Soon"
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: "!10_<<collection_name>>"
+    sort_title: "!01_<<collection_name>>"
     collection_mode: hide_items
-    collection_order: release.desc
+    collection_order: added.desc
     sync_mode: sync
   Tops:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
     sort_title: "!12_<<collection_name>>"
     collection_mode: hide_items
-    collection_order: release.desc
+    collection_order: custom
     sync_mode: sync
   Awards:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: "!13_<<collection_name>>"
+    sort_title: "!05_<<collection_name>>"
     collection_mode: hide_items
     collection_order: custom
     sync_mode: sync
@@ -33,43 +33,54 @@ collections:
 ## Recently Added and Leaving Soon ##
 #####################################
   Recently Added:
-    template: {name: Recent, poster: 317028}
+    template: {name: Recent, poster: 459110}
     plex_search:
       any: 
-        added: 30
-    summary: "Movies that were added to Plex in the last 30 days"
+        added: 15
+    summary: "Movies that were added to Plex in the last 15 days"
 
 ########################################
 ## Recommended (TOPs, Trendings, etc) ##
 ########################################
   Trending:
-    template: {name: Tops, poster: 396719}
+    template: {name: Tops, poster: 201418}
     trakt_list:
       - https://trakt.tv/users/sigmund93/lists/most-watched-top-20
-    summary: "The 20 Most Watched movies over the past week."
+    summary: "Trakt's Top 20 Trending Movies"
   Popular:
-    template: {name: Tops, poster: 396722}
+    template: {name: Tops, poster: 201417}
     trakt_list:
       - https://trakt.tv/users/sigmund93/lists/most-recommended-top-20
-    summary: "The 20 Most Recommended movies over the past month."
+    summary: "Trakt's Top 20 Popular Movies"
+  Most Watched:
+    template: {name: Tops, poster: 201417}
+    trakt_list:
+      - https://trakt.tv/users/sigmund93/lists/most-watched-of-the-week-top-20-trakt
+    summary: "Trakt's Top 20 Most Watched Movies of the Week"
 
 ############
 ## Awards ##
 ############
-  IMDB Top 250:
-    template: {name: Awards, poster: 396723}
-    imdb_search:
-      type: movie
-      imdb_top: 250
-    summary: "The IMDB Top 250"
+#  IMDB Top 250:
+#    template: {name: Awards, poster: 396723}
+#    imdb_search:
+#      type: movie
+#      imdb_top: 250
+#    summary: "The IMDB Top 250"
   IMDB Top 1000:
     template: {name: Awards, poster: 264259}
     imdb_search:
       type: movie
       imdb_top: 1000
-    summary: "The IMDB Top 1000"
-  Oscar Winners:
-    template: {name: Awards, poster: 98024}
+    summary: "The IMDB Top 1000 movies"
+  IMDB Bottom 1000:
+    template: {name: Awards, poster: 264260}
+    imdb_search:
+      type: movie
+      imdb_bottom: 1000
+    summary: "The IMDB Bottom 1000 movies"
+  Oscars Winners:
+    template: {name: Awards, poster: 192593}
     imdb_search:
       limit: 1000
       release.after: 1970-01-01
