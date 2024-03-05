@@ -36,7 +36,7 @@ collections:
   Jason Statham:
     template: {name: Actor, person: 976, poster: 310748}
   Ana de Armas:
-    template: {name: Actor, person: 224513, poster: 463258}
+    template: {name: Actor, person: 224513, poster: 463337}
   Kevin Costner:
     template: {name: Actor, person: 1269, poster: 114400}
   Emma Stone:
