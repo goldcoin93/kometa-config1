@@ -125,6 +125,7 @@ collections:
     summary: A B movie, or B film, is a type of low-budget commercial motion picture. Originally, during the Golden Age of Hollywood, this term specifically referred to films meant to be shown as the lesser-known second half of a double feature, somewhat similar to B-sides in the world of recorded music.
     trakt_list:
       - https://trakt.tv/users/sigmund93/lists/b-movies
+      - https://trakt.tv/users/luisholy1/lists/fun-campy-trash-cult-low-budget-horror-sci-fi-fantasy-mystery-movies
   Children:
     template: {name: Special Genre, collection: Children, poster: 409164}
     summary: A children's film, or family film, is a film genre that contains children or relates to them in the context of home and family. Children's films are made specifically for children and not necessarily for the general audience, while family films are made for a wider appeal with a general audience in mind.
