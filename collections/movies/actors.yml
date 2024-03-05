@@ -36,6 +36,33 @@ collections:
   Jason Statham:
     template: {name: Actor, person: 976, poster: 310748}
   Ana de Armas:
-    template: {name: Actor, person: 224513, poster: 105172}
-
+    template: {name: Actor, person: 224513, poster: 463258}
+  Kevin Costner:
+    template: {name: Actor, person: 1269, poster: 114400}
+  Emma Stone:
+    template: {name: Actor, person: 54693, poster: 84158}
+#  Neal McDonough:
+#    template: {name: Actor, person: 2203, poster: }
+  Margot Robbie:
+    template: {name: Actor, person: 234352, poster: 201756}
+  Mark Wahlberg:
+    template: {name: Actor, person: 13240, poster: 239138}
+  Liam Neeson:
+    template: {name: Actor, person: 3896, poster: 125692}
+  Kurt Russell:
+    template: {name: Actor, person: 6856, poster: 220138}
+  Keanu Reeves:
+    template: {name: Actor, person: 6384, poster: 436483}
+  Tom Cruise:
+    template: {name: Actor, person: 500, poster: 150195}
+  Matt Damon:
+    template: {name: Actor, person: 1892, poster: 47461}
+  Christopher Walken:
+    template: {name: Actor, person: 4690, poster: 239852}
+  Willem Dafoe:
+    template: {name: Actor, person: 5293, poster: 150198} 
+  Jennifer Lawrence:
+    template: {name: Actor, person: 72129, poster: 153222}  
+  Henry Cavill:
+    template: {name: Actor, person: , poster: }
 
