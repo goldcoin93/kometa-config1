@@ -32,7 +32,7 @@ collections:
   Leonardo Di Caprio:
     template: {name: Actor, person: 6193, poster: 116370}
   Pedro Pascal:
-    template: {name: Actor, person: 1253360, poster: }
+    template: {name: Actor, person: 1253360, poster: 463184}
   Jason Statham:
     template: {name: Actor, person: 976, poster: 310748}
   Ana de Armas:
@@ -64,5 +64,5 @@ collections:
   Jennifer Lawrence:
     template: {name: Actor, person: 72129, poster: 153222}  
   Henry Cavill:
-    template: {name: Actor, person: , poster: }
+    template: {name: Actor, person: 73968, poster: 464193}
 
