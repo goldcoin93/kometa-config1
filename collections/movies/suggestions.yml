@@ -46,6 +46,7 @@ collections:
     template: {name: Tops, poster: 463093}
     radarr_taglist: filmsathome
     sort_title: "!12_FilmsAtHome"
+    collection_order: added.desc
     summary: "Movies recommended by the Instagram account @filmsathome"
   Trending:
     template: {name: Tops, poster: 201418}
