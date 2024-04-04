@@ -1,91 +1,106 @@
+templates:
+  Collection:
+    mapping_id: <<id>>
+  Movie:
+    mapping_id: <<id>>
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
 metadata:
+##############################
+####### FRANCHISE NAME #######
+##############################
+#  Collection:
+#    template: {name: Collection, id: TMDB_ID, poster: TPDB_ID} 
+#  Movie:
+#    template: {name: Movie, id: TMDB_ID, poster: TPDB_ID}
+
+##############################
+############ SAW #############
+##############################
+  Saw Collection:
+    template: {name: Collection, id: 656, poster: 8423}
+  Saw:
+    template: {name: Movie, id: 176, poster: 8424}
+  Saw II:
+    template: {name: Movie, id: 215, poster: 8425}
+  Saw III:
+    template: {name: Movie, id: 214, poster: 8426}
+  Saw IV:
+    template: {name: Movie, id: 663, poster: 8427}
+  Saw V:
+    template: {name: Movie, id: 11917, poster: 8428}
+  Saw VI:
+    template: {name: Movie, id: 22804, poster: 8429}
+  Saw VII:
+    template: {name: Movie, id: 41439, poster: 8430}
+  Jigsaw:
+    template: {name: Movie, id: 298250, poster: 8431}
+  Spiral:
+    template: {name: Movie, id: 602734, poster: 167452}
+  Saw X:
+    template: {name: Movie, id: 951491, poster: 423984}
+
+##############################
+######### STAR WARS ##########
+##############################
+  Star Wars: 
+    template: {name: Collection, id: 10, poster: 5846}
   Star Wars Episode IV - A New Hope:
-    mapping_id: tt0076759
-    url_poster: https://theposterdb.com/api/assets/5847
+    template: {name: Movie, id: 11, poster: 5847}
   Star Wars Episode V - The Empire Strikes Back:
-    mapping_id: tt0080684
-    url_poster: https://theposterdb.com/api/assets/5848
+    template: {name: Movie, id: 1891, poster: 5848}
   Star Wars Episode VI - Return of the Jedi:
-    mapping_id: tt0086190
-    url_poster: https://theposterdb.com/api/assets/5849
+    template: {name: Movie, id: 1892, poster: 5849}
   Star Wars Episode I - The Phantom Menace:
-    mapping_id: tt0120915
-    url_poster: https://theposterdb.com/api/assets/5850
+    template: {name: Movie, id: 1893, poster: 5850}
   Star Wars Episode II - Attack of the Clones:
-    mapping_id: tt0121765
-    url_poster: https://theposterdb.com/api/assets/5851
+    template: {name: Movie, id: 1894, poster: 5851}
   Star Wars Episode III - Revenge of the Sith:
-    mapping_id: tt0121766
-    url_poster: https://theposterdb.com/api/assets/5852
+    template: {name: Movie, id: 1895, poster: 5852}
   Star Wars Episode VII - The Force Awakens:
-    mapping_id: tt2488496
-    url_poster: https://theposterdb.com/api/assets/5854
+    template: {name: Movie, id: 140607, poster: 5854}
   Star Wars Episode VIII - The Last Jedi:
-    mapping_id: tt2527336
-    url_poster: https://theposterdb.com/api/assets/5856
+    template: {name: Movie, id: 181808, poster: 5856}
   Star Wars Episode IX - The Rise of Skywalker:
-    mapping_id: tt2527338
-    url_poster: https://theposterdb.com/api/assets/5858
+    template: {name: Movie, id: 181812, poster: 5858}
   Star Wars The Clone Wars:
-    mapping_id: tt0458290
-    url_poster: https://theposterdb.com/api/assets/5853
+    template: {name: Movie, id: 12180, poster: 5853}
   Rogue One - A Star Wars Story:
-    mapping_id: tt3748528
-    url_poster: https://theposterdb.com/api/assets/5855
+    template: {name: Movie, id: 330459, poster: 5855}
   Solo - A Star Wars Story:
-    mapping_id: tt3778644
-    url_poster: https://theposterdb.com/api/assets/5857
-  The Christmas Chronicles - Part Two:
-    mapping_id: tt11057644
-    url_poster: https://theposterdb.com/api/assets/110744
+    template: {name: Movie, id: 348350, poster: 5857}
+
+
   Harry Potter and the Sorcerer's Stone:
-    mapping_id: tt0241527
-    url_poster: https://theposterdb.com/api/assets/34023
+    template: {name: Movie, id: tt0241527, poster: 34023}
   Harry Potter and the Chamber of Secrets:
-    mapping_id: tt0295297
-    url_poster: https://theposterdb.com/api/assets/34024
+    template: {name: Movie, id: tt0295297, poster: 34024}
   Harry Potter and the Prisoner of Azkaban:
-    mapping_id: tt0304141
-    url_poster: https://theposterdb.com/api/assets/34025
+    template: {name: Movie, id: tt0304141, poster: 34025}
   Harry Potter and the Goblet of Fire:
-    mapping_id: tt0330373
-    url_poster: https://theposterdb.com/api/assets/34026
+    template: {name: Movie, id: tt0330373, poster: 34026}
   Harry Potter and the Order of the Phoenix:
-    mapping_id: tt0373889
-    url_poster: https://theposterdb.com/api/assets/34027
+    template: {name: Movie, id: tt0373889, poster: 34027}
   Harry Potter and the Half-Blood Prince:
-    mapping_id: tt0417741
-    url_poster: https://theposterdb.com/api/assets/34028
+    template: {name: Movie, id: tt0417741, poster: 34028}
   Harry Potter and the Deathly Hallows - Part 1:
-    mapping_id: tt0926084
-    url_poster: https://theposterdb.com/api/assets/34029
+    template: {name: Movie, id: tt0926084, poster: 34029}
   Harry Potter and the Deathly Hallows - Part 2:
-    mapping_id: tt1201607
-    url_poster: https://theposterdb.com/api/assets/34030
+    template: {name: Movie, id: tt1201607, poster: 34030}
   Fantastic Beasts and Where to Find Them:
-    mapping_id: tt3183660
-    url_poster: https://theposterdb.com/api/assets/34282
+    template: {name: Movie, id: tt3183660, poster: 34282}
   Fantastic Beasts - The Crimes of Grindelwald:
-    mapping_id: tt4123430
-    url_poster: https://theposterdb.com/api/assets/34283
+    template: {name: Movie, id: tt4123430, poster: 34283}
   Fantastic Beasts - The Secrets of Dumbledore:
-    mapping_id: tt4123432
-    url_poster: https://theposterdb.com/api/assets/234426
+    template: {name: Movie, id: tt4123432, poster: 234426}
   The Equalizer: 
-    mapping_id: tt0455944
-    url_poster: https://theposterdb.com/api/assets/112830
+    template: {name: Movie, id: tt0455944, poster: 112830}
   The Equalizer 2:
-    mapping_id: tt3766354
-    url_poster: https://theposterdb.com/api/assets/112831
+    template: {name: Movie, id: tt3766354, poster: 112831}
   The Equalizer 3:
-    mapping_id: tt17024450
-    url_poster: https://theposterdb.com/api/assets/406400
+    template: {name: Movie, id: tt17024450, poster: 406400}
   Ghostbusters:
-    mapping_id: tt0087332
-    url_poster: https://theposterdb.com/api/assets/7545
+    template: {name: Movie, id: tt0087332, poster: 7545}
   Ghostbusters II:
-    mapping_id: tt0097428
-    url_poster: https://theposterdb.com/api/assets/7546
+    template: {name: Movie, id: tt0097428, poster: 7546}
   Ghostbusters - Afterlife:
-    mapping_id: tt4513678
-    url_poster: https://theposterdb.com/api/assets/7547
+    template: {name: Movie, id: tt4513678, poster: 7547}
