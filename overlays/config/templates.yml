@@ -7,7 +7,7 @@ templates:
         audience_rating.lte: <<lte>>
     overlay:
       name: <<overlay_name>>
-      file: config/overlays/ribbon-top-left/<<overlay_name>>.png
+      file: config/overlays/movies/<<overlay_name>>.png
       group: <<group>>
       weight: <<weight>>
     tmdb_trending_daily: <<tmdbTrendDaily>>
@@ -15,7 +15,7 @@ templates:
   TrendingSeries:
     overlay:
       name: <<overlay_name>>
-      file: config/overlays/ribbon-top-left/<<overlay_name>>.png
+      file: config/overlays/movies/<<overlay_name>>.png
       group: <<group>>
       weight: <<weight>>
     tmdb_trending_daily: <<tmdbTrendDaily>>
@@ -26,7 +26,7 @@ templates:
       limit: 3000
     overlay:
       name: <<overlay_name>>
-      file: config/overlays/ribbon-top-left/<<overlay_name>>.png
+      file: config/overlays/movies/<<overlay_name>>.png
       group: <<group>>
       weight: <<weight>>
 
@@ -37,7 +37,7 @@ templates:
       limit: 3000
     overlay:
       name: <<overlay_name>>
-      file: config/overlays/ribbon-top-left/<<overlay_name>>.png
+      file: config/overlays/movies/<<overlay_name>>.png
       group: <<group>>
       weight: <<weight>>
 
@@ -48,7 +48,7 @@ templates:
         audience_rating.lte: <<lte>>
     overlay:
       name: <<overlay_name>>
-      file: config/overlays/ribbon-top-left/<<overlay_name>>.png
+      file: config/overlays/movies/<<overlay_name>>.png
       group: <<group>>
       weight: <<weight>>
       
