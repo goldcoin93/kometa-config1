@@ -7,7 +7,7 @@ templates:
         smart_filter:
           all:
             genre: <<collection>>
-          sort_by: title.desc
+          sort_by: title.asc
         url_poster: https://theposterdb.com/api/assets/<<poster>>
         sort_title: "!31_<<collection_name>>"
         collection_mode: hide_items
