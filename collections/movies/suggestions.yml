@@ -56,7 +56,7 @@ collections:
   Most Watched:
     template: {name: Tops, poster: 201417}
     trakt_list:
-      - https://trakt.tv/users/sigmund93/lists/most-watched-of-the-week-top-20-trakt
+      - https://trakt.tv/users/sigmund93/lists/most-watched-movies-top-20-trakt
     summary: "Trakt's Top 20 Most Watched Movies of the Week"
 
 ############
