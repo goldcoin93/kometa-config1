@@ -11,14 +11,14 @@ collections:
     url_poster: https://i.imgur.com/LwFREiz.jpeg
     sort_title: '!11_Popularity'
     blank_collection: true
-  Actors:
-    url_poster: https://i.imgur.com/wxvnh9A.jpg
-    sort_title: '!20_Actors'
-    blank_collection: true
-  Directors:
-    url_poster: https://i.imgur.com/992zpFP.jpeg
-    sort_title: '!22_Actors'
-    blank_collection: true
+#  Actors:
+#    url_poster: https://i.imgur.com/wxvnh9A.jpg
+#    sort_title: '!20_Actors'
+#    blank_collection: true
+#  Directors:
+#    url_poster: https://i.imgur.com/992zpFP.jpeg
+#    sort_title: '!22_Actors'
+#    blank_collection: true
   Genre: 
     url_poster: https://i.imgur.com/3tfQx21.jpg
     sort_title: '!30_Genre'
