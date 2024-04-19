@@ -1,0 +1,183 @@
+overlays:
+
+  Default_BG:
+    overlay:
+      name: Default_BG
+      file: config/overlays/background/default.png
+    plex_all: true
+
+### Resolutions ###
+
+  4K_DVHDR:
+    overlay:
+      name: 4K_DVHDR
+      group: Resolution
+      weight: 158
+      file: config/overlays/resolution/4kdvhdr.png
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: true
+
+  4K_PLUS:
+    overlay:
+      name: 4K_PLUS
+      group: Resolution
+      weight: 155
+      file: config/overlays/resolution/4kplus.png
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      filepath.regex: '(?i)\bhdr10(\+|p(lus)?\b)'
+
+  4K_DV:
+    overlay:
+      name: 4K_DV
+      group: Resolution
+      weight: 150
+      file: config/overlays/resolution/4kdv.png
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: true
+
+  4K_HDR:
+    overlay:
+      name: 4K_HDR
+      group: Resolution
+      weight: 140
+      file: config/overlays/resolution/4khdr.png
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+
+  4K:
+    overlay:
+      name: 4K
+      group: Resolution
+      weight: 130
+      file: config/overlays/resolution/4k.png
+    plex_search:
+      all:
+        resolution: 4K
+
+  HD_DVHDR:
+    overlay:
+      name: HD_DVHDR
+      group: Resolution
+      weight: 128
+      file: config/overlays/resolution/HDdvhdr.png
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      has_dolby_vision: true
+
+  HD_PLUS:
+    overlay:
+      name: HD_PLUS
+      group: Resolution
+      weight: 125
+      file: config/overlays/resolution/HDplus.png
+    plex_search:
+      all:
+        resolution: 1080p
+    filters:
+      filepath.regex: '(?i)\bhdr10(\+|p(lus)?\b)'
+
+  HD_DV:
+    overlay:
+      name: HD_DV
+      group: Resolution
+      weight: 120
+      file: config/overlays/resolution/HDdv.png
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      has_dolby_vision: true
+
+  HD_HDR:
+    overlay:
+      name: HD_HDR
+      group: Resolution
+      weight: 110
+      file: config/overlays/resolution/HDhdr.png
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      has_dolby_vision: false
+
+  HD:
+    overlay:
+      name: HD
+      group: Resolution
+      weight: 100
+      file: config/overlays/resolution/HD.png
+    plex_search:
+      all:
+        resolution: 1080p
+
+  SD:
+    overlay:
+      name: SD
+      group: Resolution
+      weight: 70
+      file: config/overlays/resolution/SD.png
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)720|hd|576|480|sd'
+
+### Audio Codecs ###
+
+  Dolby_Digital+Atmos:
+    overlay:
+      name: Dolby_Digital+Atmos
+      group: Audio
+      weight: 300
+      file: config/overlays/audio_codec/atmos.png
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)((?=.*([^-]DD[P+](?!A)|eac3))(?=.*\b(atmos(\b|\d))))|(?=.*\b(DDPA(\b|\d)))'
+    
+  Dolby_Atmos:
+    overlay:
+      name: Dolby_Atmos
+      group: Audio
+      weight: 300
+      file: config/overlays/audio_codec/atmos.png
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)^(?!.*([^-]DD[P+](?!A)|eac3|true[ .-]?hd))(?=.*\b(atmos(\b|\d))).*'
+    
+  Dolby_TrueHD_Atmos:
+    overlay:
+      name: Dolby_TrueHD_Atmos
+      group: Audio
+      weight: 500
+      file: config/overlays/audio_codec/atmos.png
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)(?=.*\b(true[ .-]?hd))(?=.*\b(atmos(\b|\d)))'
+
+  DTSX:
+    overlay:
+      name: DTSX
+      group: Audio
+      weight: 300
+      file: config/overlays/audio_codec/dtsx.png
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)\bdts[ ._-]?x\b'
