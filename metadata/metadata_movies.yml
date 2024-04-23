@@ -69,48 +69,35 @@ metadata:
   Solo - A Star Wars Story:
     template: {name: Movie, id: 348350, poster: 5857}
 
-#####################################
-########## Wizarding World ##########
-#####################################
 
-  Harry Potter and the Philosopher's Stone:
-    template: {name: Movie, id: tt0241527, poster: 166279}
+  Harry Potter and the Sorcerer's Stone:
+    template: {name: Movie, id: tt0241527, poster: 34023}
   Harry Potter and the Chamber of Secrets:
-    template: {name: Movie, id: tt0295297, poster: 166280}
+    template: {name: Movie, id: tt0295297, poster: 34024}
   Harry Potter and the Prisoner of Azkaban:
-    template: {name: Movie, id: tt0304141, poster: 166281}
+    template: {name: Movie, id: tt0304141, poster: 34025}
   Harry Potter and the Goblet of Fire:
-    template: {name: Movie, id: tt0330373, poster: 166282}
+    template: {name: Movie, id: tt0330373, poster: 34026}
   Harry Potter and the Order of the Phoenix:
-    template: {name: Movie, id: tt0373889, poster: 166283}
+    template: {name: Movie, id: tt0373889, poster: 34027}
   Harry Potter and the Half-Blood Prince:
-    template: {name: Movie, id: tt0417741, poster: 166284}
+    template: {name: Movie, id: tt0417741, poster: 34028}
   Harry Potter and the Deathly Hallows - Part 1:
-    template: {name: Movie, id: tt0926084, poster: 166285}
+    template: {name: Movie, id: tt0926084, poster: 34029}
   Harry Potter and the Deathly Hallows - Part 2:
-    template: {name: Movie, id: tt1201607, poster: 166286}
+    template: {name: Movie, id: tt1201607, poster: 34030}
   Fantastic Beasts and Where to Find Them:
-    template: {name: Movie, id: tt3183660, poster: 166287}
+    template: {name: Movie, id: tt3183660, poster: 34282}
   Fantastic Beasts - The Crimes of Grindelwald:
-    template: {name: Movie, id: tt4123430, poster: 166288}
+    template: {name: Movie, id: tt4123430, poster: 34283}
   Fantastic Beasts - The Secrets of Dumbledore:
-    template: {name: Movie, id: tt4123432, poster: 234767}
-
-###############################
-########## Equalizer ##########
-###############################
-  
+    template: {name: Movie, id: tt4123432, poster: 234426}
   The Equalizer: 
     template: {name: Movie, id: tt0455944, poster: 112830}
   The Equalizer 2:
     template: {name: Movie, id: tt3766354, poster: 112831}
   The Equalizer 3:
     template: {name: Movie, id: tt17024450, poster: 406400}
-
-###############################
-########## Ghostbusters #######
-###############################
-
   Ghostbusters:
     template: {name: Movie, id: tt0087332, poster: 7545}
   Ghostbusters II:
