@@ -1,4 +1,4 @@
-# Plex Meta Manager Config
+# Kometa Config
 Special thanks to many people in PMM discord! Also, I'd like to particularly thank bullmose and Mr. Carrot who have helped me tremendously with all my support needs. 
 The current configuration was inspired (and copied from) by other people's work: bullmose, solen, kaden, and JJJonesJr3)
 
