@@ -19,6 +19,17 @@ download_url_assets: true
 Make sure to review all the `settings` in the config.yaml file.
 If you'd like to understand more about these attributes, visit the [wiki](https://metamanager.wiki/en/nightly/config/settings/). 
 
+## Config
+
+The config file is incomplete. It's missing all the connections to Radarr, Webhooks, Trakt, etc.
+
 ## Movies
+
+There are 
+
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/ce030d03-0b42-4d8b-ba37-99e35fcd0fa9)
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/62b5bb51-3786-4bac-996b-18baa54ec6d0)
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/726eed0b-69aa-4677-bd01-51a1436fee7c)
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/6a9e0962-110b-47a1-90b8-1e75b9278a1b)
 
 
