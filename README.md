@@ -41,7 +41,7 @@ Images are taken mostly from ThePosterDB. Make sure to check the genres.yml file
 
 ### Universes
 
-
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/a253c147-2347-404c-8252-98931131930e) ![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/390434d6-e13a-41af-aa5b-39e0be5d4bab)
 
 ### Franchises
 
