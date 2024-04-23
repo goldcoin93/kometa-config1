@@ -4,13 +4,13 @@ The current configuration was inspired (and copied from) by other people's work:
 
 ## Important Notes
 
-:white_check_mark::white_check_mark: <h3>**THIS REPOSITORY WILL NOT BE UPDATED MOVING FORWARD**</h3>:white_check_mark::white_check_mark:
+:white_check_mark::white_check_mark:<h3>**THIS REPOSITORY WILL NOT BE UPDATED MOVING FORWARD**</h3>:white_check_mark::white_check_mark:
 
 I have decided to take a different approach and organize my Plex differently. New version found [here](https://github.com/goldcoin93/kometa-new)
 
 Configuration files are based on NIGHTLY version.
 
-:warning::warning:**Do keep in mind that this config will download all the pics from URL and place them into the `assets` folder. Part of the settings configuration below:**:warning::warning:
+:warning::warning:<h2>**Do keep in mind that this config will download all the pics from URL and place them into the `assets` folder. Part of the settings configuration below:**</h2>:warning::warning:
 ```
 asset_depth: 1
 create_asset_folders: true
