@@ -1,0 +1,264 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bullmoose20/pmm-yaml-schema/main/config_schema.json
+# ^^^ Added by bot: Luma#8187 ^^^
+## This file is a template remove the .template to use the file
+
+libraries:
+  Movies:                                           # Must match a library name in your Plex
+    report_path: config/report/Movies.yml
+    template_variables:
+      sep_style: orig                               # use the gray separators globally for this library
+    metadata_files:
+    - file: config/metadata/metadata_movies.yml
+    collection_files:
+    - file: config/collections/movies/actors.yml      # Actors Collection
+      asset_directory: /config/assets/movies/actors
+    - file: config/collections/movies/directors.yml   # Directors Collection
+      asset_directory: /config/assets/movies/directors
+    - file: config/collections/movies/genres.yml      # Genre Collection
+      asset_directory: /config/assets/movies/genres
+    - file: config/collections/movies/holidays.yml    # Holiday Collection
+      asset_directory: /config/assets/movies/holidays
+    - file: config/collections/movies/suggestions.yml # Trending, Popular, IMDB 250, etc Collection
+      asset_directory: /config/assets/movies/suggestions
+#    - file: config/collections/movies/country.yml     # Country Collection
+#    - file: config/collections/movies/based.yml       # Based on Books, Comics, etc Collection
+    - file: config/collections/movies/separators.yml  # Separators - EMPTY COLLECTIONS
+      asset_directory: /config/assets/movies/separators
+
+#############################
+##   Top 10 - Flixpatrol   ##
+#############################
+#    - pmm: flixpatrol
+#      template_variables:
+#        in_the_last: 14
+#        location: united_states
+#        collection_section: '02'
+#        url_poster_netflix: https://theposterdb.com/api/assets/163448
+#        url_poster_disney: https://theposterdb.com/api/assets/163294
+#        url_poster_max: https://theposterdb.com/api/assets/163885
+#        url_poster_hulu: https://theposterdb.com/api/assets/163302
+#        url_poster_paramount: https://theposterdb.com/api/assets/163819
+#        url_poster_prime: https://theposterdb.com/api/assets/163301
+#        item_radarr_tag: flixpatrol_pmm
+
+#############################
+##  Franchise Collection   ##
+#############################
+    - pmm: franchise
+      asset_directory: config/assets/movies/franchise
+      template_variables:
+      #  exclude:
+      #    - 10
+        url_poster_1241: https://theposterdb.com/api/assets/34022
+        url_poster_435259: https://theposterdb.com/api/assets/34281
+        url_poster_523855: https://theposterdb.com/api/assets/112829
+        url_poster_2980: https://theposterdb.com/api/assets/7544
+        url_poster_656: https://theposterdb.com/api/assets/8423
+
+#############################
+##  Universes Collection   ##
+#############################
+
+#    - pmm: universe
+#      template_variables:
+#        collection_section: '91'
+
+
+#############################
+##     Collectionless      ##
+#############################
+    - pmm: collectionless
+      template_variables:
+        url_poster: https://i.imgur.com/7oStcg7.jpeg
+        sort_title: '!80_Collectionless'
+        collection_order: release.desc
+
+    overlay_files:
+    - remove_overlays: false                        # Set to true if you want to remove overlays
+    - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlay
+
+    - file: config/overlays/config/4k_movies.yml        # 4k ribbon on bottom right
+    - file: config/overlays/config/ribbon_awards.yml    # Oscar, Emmy, and Golden Globe ribbon
+    - file: config/overlays/config/ribbon_imdb.yml      # IMDB (Top 250 and Top 1000)
+#    - file: config/overlays/config/ribbon_rotten.yml   # Rotten Tomatoes (Bronze, Silver, Gold) - Disable due to taking priority over others and rating overlay shows RT ratings
+    - file: config/overlays/config/ribbon_trending.yml  # Fire/Trending
+
+################################
+##  Black Ribbon  - Ratings   ##
+################################
+
+# Both runtimes and ratings are needed to
+# create the black ribbon on the bottom of
+# each poster.
+# More info: https://metamanager.wiki/en/nightly/showcase/overlays/?h=showcase#__tabbed_3_1
+
+    - pmm: runtimes
+      template_variables:
+        text: ''
+        horizontal_position: center
+        rating_alignment: horizontal
+        vertical_position: bottom
+        back_width: 2500
+        back_radius: 1
+        back_color: '#000000'
+        horizontal_offset: 0
+        vertical_offset: 0
+    - pmm: ratings
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        rating2: audience
+        rating2_image: rt_popcorn
+        rating3: user
+        rating3_image: trakt
+        horizontal_position: center
+        rating_alignment: horizontal
+        vertical_position: bottom
+        back_width: 1
+        back_radius: 0
+        back_height: 40
+        back_color: '#000000'
+
+    settings:
+      asset_directory: config/assets/movies/collectionless
+      prioritize_assets: true
+
+    operations:
+      split_duplicates: false                       # Splits all duplicate movies/shows found in this library
+      assets_for_all: true                         # Search in assets for images for every item in your library
+      mass_critic_rating_update: mdb_imdb
+      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_user_rating_update: mdb_trakt
+      mass_genre_update: tmdb                       # Update all genres from tmdb
+      mass_originally_available_update: tmdb        # Update all original available date from tmdb
+      mass_collection_mode: hide_items
+
+
+  TV Shows:                                         # Must match a library name in your Plex
+    report_path: config/report/TV.yml
+    template_variables:
+      sep_style: orig                               # use the gray separators globally for this library
+      collection_mode: hide_items                   # hide all the items in a collection from the library
+    collection_files:
+    - file: config/collections/tv/collections.yml   # Individual collections
+      asset_directory: config/assets/tv/collections
+   # - file: config/collections/tv/separators.yml    # Separators - EMPTY COLLECTIONS
+   # - file: config/collections/tv/suggestions.yml
+   # - file: config/collections/tv/networks.yml
+
+    overlay_files:
+    - remove_overlays: false                        # Set to true if you want to remove overlays
+    - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
+
+    - file: config/overlays/config/status.yml           # Status in the top left corner
+    - file: config/overlays/config/network_fallback.yml # Fallback Network logo which is overwritten by pmm: network if it finds an image for the network. Must run before pmm: network.
+
+    # Uses the default PMM network but replaces the image with custom ones
+    - pmm: network
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        file: config/overlays/network-top-left/<<key>>.png
+        back_color: 00
+
+################################
+##  Black Ribbon  - Ratings   ##
+################################
+
+# Both runtimes and ratings are needed to
+# create the black ribbon on the bottom of
+# each poster.
+# More info: https://metamanager.wiki/en/nightly/showcase/overlays/?h=showcase#__tabbed_3_1
+    - pmm: runtimes
+      template_variables:
+        text: ''
+        horizontal_position: center
+        rating_alignment: horizontal
+        vertical_position: bottom
+        back_width: 2500
+        back_radius: 1
+        back_color: '#000000'
+        horizontal_offset: 0
+        vertical_offset: 0
+    - pmm: ratings
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        rating2: audience
+        rating2_image: rt_popcorn
+        rating3: user
+        rating3_image: trakt
+        horizontal_position: center
+        rating_alignment: horizontal
+        vertical_position: bottom
+        back_width: 1
+        back_radius: 0
+        back_height: 40
+        back_color: '#000000'
+
+    settings:
+      asset_directory: config/assets/tv/collectionless
+      prioritize_assets: true
+
+    operations:
+      split_duplicates: false                           # Splits all duplicate movies/shows found in this library
+      assets_for_all: true                              # Search in assets for images for every item in your library
+      mass_critic_rating_update: mdb_imdb               # Update critc ratings with IMDB
+      mass_audience_rating_update: mdb_tomatoesaudience # Update audience ratings with rotten tomatoes
+      mass_user_rating_update: mdb_trakt                # Update user ratings with traktv
+      mass_genre_update: tmdb                           # Update all genres from tmdb
+      mass_content_rating_update: mdb_commonsense       # Changes Content Rating to "1", "2" etc. to specify appropriate age
+      mass_originally_available_update: tmdb            # Update all original available date from tmdb
+      mass_collection_mode: hide_items
+
+
+playlist_files:
+- file: config/collections/playlist/playlist.yml
+
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 1
+  create_asset_folders: true
+  prioritize_assets: true
+  dimensional_asset_rename: true
+  download_url_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 60
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_report: true
+  tvdb_language: eng
+  ignore_ids: 1189604
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
