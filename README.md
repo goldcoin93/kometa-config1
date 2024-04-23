@@ -23,9 +23,17 @@ If you'd like to understand more about these attributes, visit the [wiki](https:
 
 The config file is incomplete. It's missing all the connections to Radarr, Webhooks, Trakt, etc.
 
+## General Metadata for Movies and TV Shows
+
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/9bbf670d-da07-4db3-9c26-b5ce4721753b)
+
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/f570b9c9-6a02-40cd-a7b3-a316d026c032)
+
+![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/c562adf2-3ff0-4f55-afd8-2e2022e6cedd)
+
 ## Movies
 
-Movies are separated into different categories:
+Movies are separated into different collections:
 
 ### Actors and Directors
 
