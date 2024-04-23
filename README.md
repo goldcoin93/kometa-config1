@@ -33,7 +33,7 @@ The config file is incomplete. It's missing all the connections to Radarr, Webho
 
 ![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/c562adf2-3ff0-4f55-afd8-2e2022e6cedd)
 
-## Movies
+# Movies
 
 Movies are separated into different collections:
 
@@ -63,6 +63,12 @@ Some of the franchises have been excluded and added to "Universes" collection (S
 ### Collectionless
 
 ![image](https://github.com/goldcoin93/kometa-config1/assets/25493830/e2820f84-1ff2-43bc-b57a-4b560cdb1788)
+
+# TV Shows
+
+For TV Shows, make sure to check out my latest design [here](https://github.com/goldcoin93/kometa-new)
+
+
 
 
 
